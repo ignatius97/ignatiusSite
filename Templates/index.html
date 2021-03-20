@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ignatius</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Mystyles.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" >
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href=" {{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href=" {{ url_for('static', filename='vendor/ionicons/css/ionicons.min.css') }} " rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/animate.css/animate.min.css') }}  " rel="stylesheet">
+  <link href=" {{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }} " rel="stylesheet">
+  <link href=" {{ url_for('static', filename='vendor/venobox/venobox.css') }} " rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href=" {{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+
+<style>
+    body{
+        margin: 0px;
+        margin-top: 0px;
+        margin-top: -21px;
+    }
+
+    .CoverPic {
+    height: 640px;
+    width: 100%;
+    background-image: url('../static/images/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+    background-color: rgba(2,197,200,0.5);
+    background-position: center;
+}
+
+
+    .MainTag{
+        text-align: center;
+        position: relative;
+        top: 240px;
+        box-shadow: 0px 0px 15px;
+        padding: 10px 0px;
+    }
+    .Subtag{
+        font-size: 18px;
+    }
+
+</style>
+
+<body>
+
+<!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto">ATURINDA</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="assets/img/logo.png" alt=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">Experience</a></li>
+          <li><a href="#more-features">Education Background</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+<div class="CoverPic" >
+    <h1 class="MainTag">
+        ATURINDA IGNATIUS
+        <br/>
+        <span class="Subtag" >Ready to improve your Life</span>
+    </h1>
+
+</div>
+<!-- ======= About Section ======= -->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Me</h3>
+          <span class="section-divider"></span>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="{{ url_for('static', filename='images/ign1.jpg') }}  " alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>Learn More about Aturinda Ignatius</h2>
+            <p>
+              Aturinda Ignatius is a skilled software developer with a great drive for problem solving and with an ablitiy to learn very fast. I focus on frontend development for now but have hopes for expanding my skill set to become a full-Stack developer.
+            </p>
+            <p>
+              I have developed several softwares some for organisations such as Refactory Uganda and Tallen Uganda but also many for personal experience and learning as you will see the below listed hosted projects.
+
+            </p>
+            <p>
+              I have worked with languages and frameworks such as;
+            </p>
+            <div class="row" >
+              <div class="col-md-4">
+                <ul>
+                  <li><i class="ion-android-checkmark-circle"></i> React</li>
+                  <li><i class="ion-android-checkmark-circle"></i> Laravel</li>
+                  <li><i class="ion-android-checkmark-circle"></i> Vue</li>
+                  <li><i class="ion-android-checkmark-circle"></i> Nodejs</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><i class="ion-android-checkmark-circle"></i> Javascript</li>
+                  <li><i class="ion-android-checkmark-circle"></i> HTML</li>
+                  <li><i class="ion-android-checkmark-circle"></i> CSS</li>
+                  <li><i class="ion-android-checkmark-circle"></i> PHP</li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><i class="ion-android-checkmark-circle"></i> Python</li>
+                  <li><i class="ion-android-checkmark-circle"></i> Mysql</li>
+                  <li><i class="ion-android-checkmark-circle"></i> MongoDB</li>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+<!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Experience</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">Ignatius' Field Experiences</p>
+        </div>
+
+        <ul id="faq-list" class="wow fadeInUp">
+          <li>
+            <a data-toggle="collapse" class="collapsed" href="#faq1">Tallen Ug<i class="ion-android-remove"></i></a>
+            <div id="faq1" class="collapse" data-parent="#faq-list">
+              <div >
+                    <p>We developed on Several Platforms Such as an education platform to help students to study at any time in any place and am responsible for developing the front end interface</p>
+                    <p style="font-weight: bold">Technologies Used</p>
+                      <ul>
+                          <li> Laravel</li>
+                        <li><i class="ion-android-checkmark-circle"></i> Angular</li>
+                        <li><i class="ion-android-checkmark-circle"></i> Digital Ocean</li>
+                        <li><i class="ion-android-checkmark-circle"></i> Adobe XD</li>
+                        <li><i class="ion-android-checkmark-circle"></i> React</li>
+                        <li><i class="ion-android-checkmark-circle"></i> MySQL</li>
+                      </ul>
+                    <small>The sites links are </small>
+                    <br/>
+                    <a href="https://sooma.org" target="_blank" ><small>https://sooma.org</small></a>
+                    <a href="https://agromarkets.org" target="_blank" ><small>https://agromarkents.org</small></a>
+                </div>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq2" class="collapsed">Refactory Ug<i class="ion-android-remove"></i></a>
+            <div id="faq2" class="collapse" data-parent="#faq-list">
+              <div >
+                    <p>i Worked with a team to develop a career guidance software and i was responsible for engineering the front end of the platform</p>
+                    <p style="font-weight: bold" >Technologies Used</p>
+                  <ul>
+                    <li><i class="ion-android-checkmark-circle"></i> React</li>
+                    <li><i class="ion-android-checkmark-circle"></i> Nodejs</li>
+                    <li><i class="ion-android-checkmark-circle"></i> Mongoose DB</li>
+                    <li><i class="ion-android-checkmark-circle"></i> Heroku</li>
+    <!--                <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>-->
+                  </ul>
+                    <small>The site link is </small> <a href="http://front-end-delv.herokuapp.com" target="_blank" ><small>http://front-end-delv.herokuapp.com</small></a>
+                </div>
+            </div>
+          </li>
+
+          <li>
+            <a data-toggle="collapse" href="#faq3" class="collapsed">NITA-U <i class="ion-android-remove"></i></a>
+            <div id="faq3" class="collapse" data-parent="#faq-list">
+              <p>
+                St.Joseph's Seminary Nyenga (From 2010 To 2013)
+              </p>
+            </div>
+          </li>
+
+<!--          <li>-->
+<!--            <a data-toggle="collapse" href="#faq4" class="collapsed">PLE <i class="ion-android-remove"></i></a>-->
+<!--            <div id="faq4" class="collapse" data-parent="#faq-list">-->
+<!--              <p>-->
+<!--                St.Peter's Primary School (From 2003 To 2009 )-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </li>-->
+
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+<section id="more-features" class="section-bg">
+      <div class="container">
+
+        <div class="section-header">
+          <h3 class="section-title">Education Background</h3>
+          <span class="section-divider"></span>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><img src="{{ url_for('static', filename='images/degree.png') }}  " alt="" style="height: 90px;" ></div>
+              <h4 class="title"><a href="">Degree</a></h4>
+              <p class="description">Kampala Univeristy Original (From 2016 To 2019).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><img src="{{ url_for('static', filename='images/uace.png') }}  " alt="" style="height: 90px;" ></div>
+              <h4 class="title"><a href="">UACE</a></h4>
+              <p class="description">St.Augustine's Collage Wakiso (From 2014 To 2015).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft">
+              <div class="icon"><img src="{{ url_for('static', filename='images/uce.png') }} " alt="" style="height: 90px;" ></div>
+              <h4 class="title"><a href="">UCE</a></h4>
+              <p class="description">St.Joseph's Seminary Nyenga (From 2010 To 2013).</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight">
+              <div class="icon"><img src="{{ url_for('static', filename='images/ple.png') }} " alt="" style="height: 90px;" ></div>
+              <h4 class="title"><a href="">PLE</a></h4>
+              <p class="description">St.Peter's Primary School (From 2003 To 2009 ).</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End More Features Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Aturinda Ignatius</h3>
+              <div class="social-links">
+                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                <a href="https://facebook.com/aturinda.ignatius" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                <a href="https://github.com/ignatius97" target="_blank" class="google-plus"><i class="fa fa-github"></i></a>
+                <a href="https://linkedin.com/mwlite/in/aturinda-ignatius-469ab419a" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Kansanga, Gabba Road<br>Kampala, Uganda</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>ignatius.aturinda@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+256 706514874</p>
+                <p>+256 787485556</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <form action="{{ url_for('static', filename='contact.php') }}" method="post" role="form" class="php-email-form">
+                <div class="form-row">
+                  <div class="form-group col-lg-6">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    <div class="validate"></div>
+                  </div>
+                  <div class="form-group col-lg-6">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    <div class="validate"></div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="mb-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Ignatius</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Avilon
+          -->
+            Designed by <a href="#">Aturinda Ignatius</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+<!--<h1>Ignatius' site</h1>-->
+<!--<h4>My Skills Include</h4>-->
+<!--<ul>-->
+<!--    {% for skill in Skills %}-->
+<!--        <li>{{ skill }}</li>-->
+<!--    {% endfor %}-->
+<!--</ul>-->
+
+
+
+ <!-- Vendor JS Files -->
+  <script src=" {{ url_for('static', filename='vendor/jquery/jquery.min.js') }} "></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/jquery.easing/jquery.easing.min.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/wow/wow.min.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/venobox/venobox.min.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/superfish/superfish.min.js') }}  "></script>
+  <script src="{{ url_for('static', filename='vendor/hoverIntent/hoverIntent.js') }}  "></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js') }}  "></script>
+
+</body>
+</html>
