@@ -14,6 +14,7 @@ sg = sendgrid.SendGridAPIClient('SG.cQ6BsdKYSCKZFYuYwpYwcg.6uXiL3IUMMxvzQqKZymEC
 
 
 
+
 @app.route('/', methods =["GET", "POST"])
 def index():
     if request.method == "POST":
