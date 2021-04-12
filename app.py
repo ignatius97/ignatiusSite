@@ -1,21 +1,18 @@
 from flask import Flask, render_template, url_for, request
-from flask.ext.mail import Message, Mail
-import smtplib
+import sendgrid
+import os
+from sendgrid.helpers.mail import *
 
-mail = Mail()
+
+
 
 app = Flask(__name__)
 
+myMain = 'ignatius.aturinda@gmail.com'
 
-app.secret_key = 'development key'
+sg = sendgrid.SendGridAPIClient('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')
 
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = 'ignatius.aturinda@gmail.com'
-app.config["MAIL_PASSWORD"] = 'ILuvdagal2u'
 
-mail.init_app(app)
 
 @app.route('/', methods =["GET", "POST"])
 def index():
@@ -24,12 +21,8 @@ def index():
        email = request.form.get("email")
        subject = request.form.get("subject")
        message = request.form.get("message")
-       msg = Message(subject, sender=email, recipients=['ignatius.aturinda@gmail.com'])
-       msg.body = """
-             From: %s <%s>
-             %s
-             """ % (name, email, message)
-       mail.send(msg)
+       mail = Mail(myMain, myMain, subject, message)
+       response = sg.client.mail.send.post(request_body=mail.get())
 
        return 'Form posted.'
     Skills=["Reactjs","Nodejs","Html","CSS","Python Flash","Php","JavaScript"]
